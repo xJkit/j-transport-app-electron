@@ -10,14 +10,19 @@ export default store => next => action => {
   store.dispatch({
     type: requestType,
   });
-  return fetch(endpoint)
-    .then(res => res.json())
-    .then(json => {
-      store.dispatch({
-        type: successType,
-        payload: json,
-      });
-    })
+  return fetch(endpoint, {
+    mode: 'no-cors',
+  }).then(res => {
+    if (!res.ok) {
+      return Promise.reject(res);
+    }
+    return res.json();
+  }).then(json => {
+    store.dispatch({
+      type: successType,
+      payload: json,
+    });
+  })
     .catch(() => {
       store.dispatch({
         type: failureType,

@@ -1,0 +1,3 @@
+export const GET_MRT_REQUEST = 'GET_MRT_REQUEST';
+export const GET_MRT_SUCCESS = 'GET_MRT_SUCCESS';
+export const GET_MRT_FAILURE = 'GET_MRT_FAILURE';

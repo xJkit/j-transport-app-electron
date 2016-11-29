@@ -1,10 +1,12 @@
-import { createStore, compose } from 'redux';
-import rootReducers from 'reducers';
+import { createStore, compose, applyMiddleware } from 'redux';
+import rootReducer from 'reducers';
+import api from 'middleware/api';
 
 function configureStore() {
   const store = createStore(
-    rootReducers,
+    rootReducer,
     compose(
+      applyMiddleware(api),
       window.devToolsExtension ? window.devToolsExtension() : f => f
     )
   );

@@ -1,0 +1,214 @@
+{
+  "result": {
+    "offset": 0,
+    "limit": 10000,
+    "count": 34,
+    "sort": "",
+    "results": [
+      {
+        "_id": "1",
+        "Station": "大安站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "2",
+        "Station": "大橋頭站",
+        "Destination": "蘆洲站",
+        "UpdateTime": "2016-11-29T17:18:14.567"
+      },
+      {
+        "_id": "3",
+        "Station": "中山國中站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "4",
+        "Station": "文德站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "5",
+        "Station": "台北車站",
+        "Destination": "北投站",
+        "UpdateTime": "2016-11-29T17:18:06.88"
+      },
+      {
+        "_id": "6",
+        "Station": "台電大樓站",
+        "Destination": "新店站",
+        "UpdateTime": "2016-11-29T17:18:17.127"
+      },
+      {
+        "_id": "7",
+        "Station": "行天宮站",
+        "Destination": "南勢角站",
+        "UpdateTime": "2016-11-29T17:18:13.56"
+      },
+      {
+        "_id": "8",
+        "Station": "西門站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "9",
+        "Station": "辛亥站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "10",
+        "Station": "亞東醫院站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "11",
+        "Station": "忠孝復興站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "12",
+        "Station": "忠孝新生站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "13",
+        "Station": "明德站",
+        "Destination": "象山站",
+        "UpdateTime": "2016-11-29T17:18:18.653"
+      },
+      {
+        "_id": "14",
+        "Station": "東湖站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "15",
+        "Station": "松山站",
+        "Destination": "新店站",
+        "UpdateTime": "2016-11-29T17:17:54.883"
+      },
+      {
+        "_id": "16",
+        "Station": "松山機場站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "17",
+        "Station": "松江南京站",
+        "Destination": "蘆洲站",
+        "UpdateTime": "2016-11-29T17:18:24.13"
+      },
+      {
+        "_id": "18",
+        "Station": "南京復興站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "19",
+        "Station": "南京復興站",
+        "Destination": "新店站",
+        "UpdateTime": "2016-11-29T17:18:17.127"
+      },
+      {
+        "_id": "20",
+        "Station": "南港展覽館站",
+        "Destination": "亞東醫院站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "21",
+        "Station": "南港軟體園區站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "22",
+        "Station": "後山埤站",
+        "Destination": "亞東醫院站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "23",
+        "Station": "科技大樓站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "24",
+        "Station": "海山站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "25",
+        "Station": "迴龍站",
+        "Destination": "南勢角站",
+        "UpdateTime": "2016-11-29T17:18:13.56"
+      },
+      {
+        "_id": "26",
+        "Station": "頂埔站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:11.207"
+      },
+      {
+        "_id": "27",
+        "Station": "唭哩岸站",
+        "Destination": "淡水站",
+        "UpdateTime": "2016-11-29T17:18:06.88"
+      },
+      {
+        "_id": "28",
+        "Station": "港墘站",
+        "Destination": "動物園站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "29",
+        "Station": "象山站",
+        "Destination": "淡水站",
+        "UpdateTime": "2016-11-29T17:18:18.653"
+      },
+      {
+        "_id": "30",
+        "Station": "萬隆站",
+        "Destination": "松山站",
+        "UpdateTime": "2016-11-29T17:18:17.127"
+      },
+      {
+        "_id": "31",
+        "Station": "劍南路站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      },
+      {
+        "_id": "32",
+        "Station": "劍潭站",
+        "Destination": "象山站",
+        "UpdateTime": "2016-11-29T17:18:06.88"
+      },
+      {
+        "_id": "33",
+        "Station": "關渡站",
+        "Destination": "淡水站",
+        "UpdateTime": "2016-11-29T17:18:06.88"
+      },
+      {
+        "_id": "34",
+        "Station": "麟光站",
+        "Destination": "南港展覽館站",
+        "UpdateTime": "2016-11-29T17:18:18"
+      }
+    ]
+  }
+}

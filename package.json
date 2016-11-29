@@ -6,13 +6,15 @@
   "scripts": {
     "test": "karma start",
     "dev": "webpack -w -d",
-    "start": "node server.js"
+    "start": "node server.js",
+    "start:auto": "nodemon server.js"
   },
   "author": "Jay Chung",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.9.1",
     "express": "^4.13.4",
+    "isomorphic-fetch": "^2.2.1",
     "react": "^15.3.2",
     "react-addons-test-utils": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -48,6 +50,7 @@
     "karma-webpack": "^1.7.0",
     "mocha": "^2.4.5",
     "node-sass": "^3.4.2",
+    "nodemon": "^1.11.0",
     "sass-loader": "^3.1.2",
     "script-loader": "^0.6.1",
     "style-loader": "^0.13.0",

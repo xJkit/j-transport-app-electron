@@ -2,10 +2,11 @@ import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
 
 // Other reducers are imported below
-// ...
+import mrtReducer from './mrt';
 
-const rootReducers = combineReducers({
+const rootReducer = combineReducers({
   routing: routerReducer,
+  mrt: mrtReducer,
 });
 
-export default rootReducers;
+export default rootReducer;

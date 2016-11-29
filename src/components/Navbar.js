@@ -3,15 +3,15 @@ import { Link } from 'react-router';
 
 const Navbar = () => (
   <div className="navbar">
+    <div className="logo">
+      J.Transport Console
+    </div>
     <ul>
       <li>
-        <Link to="/">Main</Link>
+        <Link to="/">MRT</Link>
       </li>
       <li>
-        <Link to="/a">A</Link>
-      </li>
-      <li>
-        <Link to="/b">B</Link>
+        <Link to="/about">About</Link>
       </li>
     </ul>
     <hr />

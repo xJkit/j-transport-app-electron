@@ -33,6 +33,9 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules)/,
+      }, {
+        loaders: ['style-loader', 'css-loader?sourceMap', 'sass-loader?sourceMap'],
+        test: /\.scss$/,
       },
     ],
   },

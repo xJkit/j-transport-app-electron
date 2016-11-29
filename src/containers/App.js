@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Navbar from 'components/Navbar';
 
-class Main extends Component {
+class App extends Component {
 
   static propTypes = {
     children: PropTypes.any,
@@ -10,13 +10,14 @@ class Main extends Component {
 
   render() {
     return (
-      <div className="Main">
-        <Navbar />
-        <h1>Main containers rendered by default</h1>
-        {this.props.children}
+      <div className="app">
+        <div className="container">
+          <Navbar />
+          {this.props.children}
+        </div>
       </div>
     );
   }
 }
 
-export default connect()(Main);
+export default connect()(App);

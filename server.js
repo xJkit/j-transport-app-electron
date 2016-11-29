@@ -15,6 +15,13 @@ app.use((req, res, next) => {
 
 app.use(express.static('public/dist'));
 
+
+const mrtJSON = require('./fakedata/mrt.json');
+
+app.get('/mrt.json', (req, res) => {
+  res.json(mrtJSON);
+});
+
 app.get('*', (req, res) => {
   res.sendFile(path.resolve(__dirname, 'public', 'index.html'));
 });

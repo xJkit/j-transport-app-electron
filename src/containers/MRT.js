@@ -6,7 +6,8 @@ import * as actions from 'actions';
 class MRT extends Component {
 
   static propTypes = {
-    mrt: PropTypes.object.isRequired,
+    isFetching: PropTypes.bool.isRequired,
+    payload: PropTypes.any,
     fetchData: PropTypes.func.isRequired,
   };
 
@@ -15,17 +16,24 @@ class MRT extends Component {
   }
 
   render() {
+    const { isFetching, payload } = this.props;
+    if (isFetching) {
+      return (<h1>讀取中...</h1>);
+    } else if (!isFetching && !payload) {
+      return (<h1>無資料，ker ker</h1>);
+    }
     return (
       <div className="mrt">
-        <h1>共有 {32} 台捷運到站：</h1>
-        <TableView />
+        <h1>共有 {payload.result.count} 台捷運到站：</h1>
+        <TableView results={payload.result.results} />
       </div>
     );
   }
 }
 
 const mapStateToProps = state => ({
-  mrt: state.mrt,
+  isFetching: state.mrt.isFetching,
+  payload: state.mrt.payload,
 });
 
 export default connect(mapStateToProps, {

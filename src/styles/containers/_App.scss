@@ -1,12 +1,16 @@
 .app {
-
+  .main-content {
+    height: calc(85vh - #{$header-height});
+    overflow: auto;
+    padding-left: 1rem;
+  }
   .container {
     border: 1px solid $grey;
     border-radius: 15px;
     overflow: hidden;
     display: block;
     max-width: $max-container-width;
-    height: calc(100vh - #{$header-height});
+    height: calc(90vh);
     margin: 0 auto;
   }
 }

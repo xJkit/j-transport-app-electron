@@ -10,6 +10,7 @@ const mrtReducer = (state = initialState, action) => {
       return {
         ...state,
         isFetching: true,
+        payload: undefined,
       };
     case Types.GET_MRT_SUCCESS:
       return {

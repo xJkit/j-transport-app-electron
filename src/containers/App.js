@@ -13,7 +13,9 @@ class App extends Component {
       <div className="app">
         <div className="container">
           <Navbar />
-          {this.props.children}
+          <div className="main-content">
+            {this.props.children}
+          </div>
         </div>
       </div>
     );

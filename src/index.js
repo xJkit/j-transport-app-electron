@@ -20,6 +20,6 @@ import 'applicationStyles';
 render(
   <Provider store={store}>
     <Router history={history} routes={routes} />
-  </Provider>,
-  document.getElementById('root')
+  </Provider>
+  , document.getElementById('root')
 );

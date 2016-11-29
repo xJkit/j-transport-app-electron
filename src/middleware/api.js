@@ -13,17 +13,15 @@ export default store => next => action => {
   return fetch(endpoint)
     .then(res => res.json())
     .then(json => {
-      console.warn(`got data: ${json}`);
       store.dispatch({
         type: successType,
         payload: json,
       });
     })
-    .catch(err => {
-      console.warn(`fetch data err: ${err}`);
+    .catch(() => {
       store.dispatch({
         type: failureType,
-        payload: err,
+        payload: undefined,
       });
     });
 };

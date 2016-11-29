@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 
-const TableView = () => (
+const TableView = ({ results }) => (
   <div className="table-view">
     <table>
       <thead>
@@ -11,14 +11,20 @@ const TableView = () => (
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>昆陽站</td>
-          <td>南港展覽館站</td>
-          <td>2016-11-29T17:18:14.567</td>
-        </tr>
+        {results.map((result, index) => (
+          <tr key={index}>
+            <td>{result.Station}</td>
+            <td>{result.Destination}</td>
+            <td>{result.UpdateTime}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   </div>
 );
+
+TableView.propTypes = {
+  results: PropTypes.array.isRequired,
+};
 
 export default TableView;

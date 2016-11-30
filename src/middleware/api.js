@@ -11,11 +11,14 @@ export default store => next => action => {
     type: requestType,
   });
   return fetch(endpoint, {
-    mode: 'no-cors',
+    mode: 'cors',
+    method: 'get',
   }).then(res => {
     if (!res.ok) {
+      console.log(`not ok, status: ${res.status}`);
       return Promise.reject(res);
     }
+    console.log(`ok, status: ${res.status}`);
     return res.json();
   }).then(json => {
     store.dispatch({
@@ -23,10 +26,11 @@ export default store => next => action => {
       payload: json,
     });
   })
-    .catch(() => {
+    .catch((err) => {
       store.dispatch({
         type: failureType,
         payload: undefined,
       });
+      console.log(err);
     });
 };

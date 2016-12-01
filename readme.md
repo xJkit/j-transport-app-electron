@@ -1,5 +1,5 @@
 # Transportation Lookup System
-大台北交通路況查詢實作，使用工具詳見 ``package.json``.
+大台北交通路況查詢實作，使用工具詳見 ``package.json``. 我使用 [request](https://github.com/request/request) 在 express 中轉發請求，繞過瀏覽器的 AJAX 同源政策。
 
 ### Installation
 ```shell

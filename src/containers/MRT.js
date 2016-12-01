@@ -20,7 +20,7 @@ class MRT extends Component {
     if (isFetching) {
       return (<h1>讀取中...</h1>);
     } else if (!isFetching && !payload) {
-      return (<h1>無資料，ker ker</h1>);
+      return (<h1>伺服器忙線中，請稍後再試一次。</h1>);
     }
     return (
       <div className="mrt">

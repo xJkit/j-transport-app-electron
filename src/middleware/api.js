@@ -1,3 +1,4 @@
+/* eslint no-console: ["error", { allow: ["warn", "error"] }] */
 export const CALL_API = Symbol('Call API');
 import 'isomorphic-fetch';
 
@@ -15,10 +16,10 @@ export default store => next => action => {
     method: 'get',
   }).then(res => {
     if (!res.ok) {
-      console.log(`not ok, status: ${res.status}`);
+      console.warn(`not ok, status: ${res.status}`);
       return Promise.reject(res);
     }
-    console.log(`ok, status: ${res.status}`);
+    console.warn(`ok, status: ${res.status}`);
     return res.json();
   }).then(json => {
     store.dispatch({
@@ -31,6 +32,6 @@ export default store => next => action => {
         type: failureType,
         payload: undefined,
       });
-      console.log(err);
+      console.warn(err);
     });
 };

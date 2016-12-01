@@ -15,7 +15,6 @@ const Navbar = ({ fetchData }) => (
       </li>
     </ul>
     <button onClick={() => fetchData()}>手動刷新</button>
-    <hr />
   </div>
 );
 

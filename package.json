@@ -1,8 +1,9 @@
 {
-  "name": "boilerplate-vanilla",
+  "name": "react-transportation-taipei",
   "version": "1.0.0",
   "description": "Simple react app",
   "main": "index.js",
+  "repository:": "git@github.com:xJkit/react-transportation-taipei.git",
   "scripts": {
     "test": "karma start",
     "dev": "webpack -w -d",

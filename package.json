@@ -1,19 +1,23 @@
 {
-  "name": "react-transportation-taipei",
+  "name": "transport-electron",
   "version": "1.0.0",
-  "description": "Simple react app",
-  "main": "index.js",
-  "repository:": "git@github.com:xJkit/react-transportation-taipei.git",
+  "description": "Simple react app within Electron",
+  "main": "main.js",
+  "repository:": "git@github.com:xJkit/j-transport-app-electron.git",
   "scripts": {
+    "start": "node server.js",
     "test": "karma start",
-    "dev": "webpack -w -d",
-    "start": "webpack && node server.js",
+    "build": "webpack",
+    "build:app": "electron-packager .",
     "start:auto": "nodemon server.js"
   },
-  "author": "Jay Chung",
+  "author": {
+    "name": "JayZ",
+    "email": "xjkit54780@gmail.com",
+    "url": "github.com/xJkit"
+  },
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.9.1",
     "express": "^4.13.4",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.3.2",
@@ -22,8 +26,7 @@
     "react-redux": "^4.4.6",
     "react-router": "^2.0.0",
     "react-router-redux": "^4.0.7",
-    "redux": "^3.6.0",
-    "request": "^2.79.0"
+    "redux": "^3.6.0"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
@@ -35,6 +38,8 @@
     "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
     "css-loader": "^0.23.1",
+    "electron": "^1.4.10",
+    "electron-packager": "^8.3.0",
     "enzyme": "^2.5.1",
     "eslint": "^2.9.0",
     "eslint-config-airbnb": "^9.0.1",
